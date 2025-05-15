@@ -9,8 +9,8 @@
 #define BUZZER_PIN 19
 
 // Cấu hình WiFi
-const char* WIFI_SSID = "Huong Tang 1";
-const char* WIFI_PASSWORD = "68686868";
+const char* WIFI_SSID = "ĐH Sao Đỏ";
+const char* WIFI_PASSWORD = "";
 
 // Cấu hình Firebase
 const char* API_KEY = "AIzaSyDCsHgRfDraiMLGlV9BFQ7IPIBOuYbpX9Y";

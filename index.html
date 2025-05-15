@@ -66,7 +66,7 @@
         recognition.onresult = (event) => {
             const speechResult = event.results[0][0].transcript.trim().toLowerCase();
             console.log("Bạn nói:", speechResult);
-            if (speechResult === "vừng ơi mở ra") {
+            if (speechResult === "mở ra") {
                 document.getElementById("overlay").style.display = "none";
                 document.getElementById("liveView").style.display = "block";
                 if (typeof enableWebcam === "function") {
@@ -85,7 +85,13 @@
         window.onload = () => {
             recognition.start();
         };
-        
+        document.getElementById("overlay").style.display = "none";
+                document.getElementById("liveView").style.display = "block";
+                if (typeof enableWebcam === "function") {
+                    enableWebcam(); // Gọi hàm trong script.js để bật webcam
+                } else {
+                    console.error("Hàm enableWebcam chưa được định nghĩa.");
+                }
     </script>
     </body>
 </html>

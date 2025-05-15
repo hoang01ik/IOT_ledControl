@@ -81,17 +81,7 @@
             console.error("Lỗi nhận diện:", event.error);
         };
 
-        // Tự động kích hoạt lắng nghe khi trang tải
-        window.onload = () => {
-            recognition.start();
-        };
-        document.getElementById("overlay").style.display = "none";
-                document.getElementById("liveView").style.display = "block";
-                if (typeof enableWebcam === "function") {
-                    enableWebcam(); // Gọi hàm trong script.js để bật webcam
-                } else {
-                    console.error("Hàm enableWebcam chưa được định nghĩa.");
-                }
+
     </script>
     </body>
 </html>
